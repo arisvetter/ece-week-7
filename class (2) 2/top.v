@@ -48,3 +48,36 @@ ones_complement ones_complement_inst_4 (
     .Y(led[4]),
     .Cout(led[5]) 
 );
+
+
+ones_complement ones_complement_inst_1 (
+    .A(APlusB[0]),
+    .B(0),
+    .carry(around),
+    .Y(led[0]),
+    .Cout(carry_10)
+);
+
+ones_complement ones_complement_inst_2 (
+    .A(sw[5]),
+    .B(sw[7]),
+    .Cin(carry_0),
+    .Y(led[4]),
+    .Cout(carry_1)
+);
+
+ones_complement ones_complement_inst_3 (
+    .A(sw[4]),
+    .B(sw[6]),
+    .carry(carry_1),
+    .Y(led[3]),
+    .Cout(carryout_in)
+);
+
+ones_complement ones_complement_inst_4 (
+    .A(sw[5]),
+    .B(sw[7]),
+    .Cin(carryout_in),
+    .Y(led[4]),
+    .Cout(led[5]) 
+);
