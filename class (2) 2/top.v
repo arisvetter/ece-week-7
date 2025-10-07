@@ -116,5 +116,12 @@ ones_complement adder_bit0 (
     .B(0),
     .Cin(bit8carry),
     .Y(led[6]),
-    .Cout(two_carry_zero)
+    .Cout(two_carry_0)
+);
+ones_complement adder_bit1 (
+    .A(intermediate[1]),
+    .B(0),
+    .Cin(two_carry_0),
+    .Y(led[7]),
+    .Cout(two_carry_1)
 );
