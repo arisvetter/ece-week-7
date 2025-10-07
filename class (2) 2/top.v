@@ -79,3 +79,26 @@ ones_complement ones_complement_inst_4 (
     .B(0),
     .Cin(carryout_in)
 );
+
+
+wire intermediate[6:0];
+wire bit8carry;
+
+twos_compliment twos_compliment (
+   .bit0(sw[2]),
+   .bit1(sw[3]),
+   .bit2(sw[4]),
+   .bit3(sw[5]),
+   .bit4(sw[6]),
+   .bit5(sw[7]),
+   .bit6(sw[8]),
+   .bit7(sw[9]),
+   .out1(intermediate[0]),
+   .out1(intermediate[1]),
+   .out2(intermediate[2]),
+   .out3(intermediate[3]),
+   .out4(intermediate[4]),
+   .out5(intermediate[5]),
+   .out6(intermediate[6]),
+   .out7(bit8carry),
+);
