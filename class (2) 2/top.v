@@ -4,11 +4,16 @@
 
 
 wire [3:0] APlusB;
-wire carry_0;
-wire carry_1;
-wire carry_2;
-wire carry_3;
+wire carry_00;
+wire carry_01;
+wire carry_02;
+wire carry_03;
 wire around;
+wire carry_10;
+wire carry_11;
+wire carry_12;
+wire carry_13;
+
 
 
 
@@ -16,7 +21,7 @@ ones_complement ones_complement_inst_1 (
     .A(sw[4]),
     .B(sw[6]),
     .carry(0),
-    .Y(led[3]),
+    .Y(APlusB[0]),
     .Cout(carry_0)
 );
 
