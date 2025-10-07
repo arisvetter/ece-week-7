@@ -84,6 +84,13 @@ ones_complement ones_complement_inst_4 (
 wire intermediate[6:0];
 wire bit8carry;
 wire two_carry_0;
+wire two_carry_1;
+wire two_carry_2;
+wire two_carry_3;
+wire two_carry_4;
+wire two_carry_5;
+wire two_carry_6;
+
 
 twos_compliment twos_compliment (
    .bit0(sw[2]),
