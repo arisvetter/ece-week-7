@@ -13,6 +13,8 @@ In this lab you've learned the basics of number theory as it relates to subtract
 
 ## Lab Questions
 
+*NOTE* Instead of creating an 8-bit 2's compliment circuit, we create a 7-bit 2's compliment circuit where the 8'th bit acted as the signal to compute the 2's compliment.
+
 ### 1 - Explain the differences between our Half Adder from last lab and the Half Subtractor from this lab.
 
 ### 2 - What about the end around carry of One’s Complement makes it hard to use and implement?
