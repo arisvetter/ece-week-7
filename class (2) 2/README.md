@@ -21,7 +21,7 @@ In this lab you've learned the basics of number theory as it relates to subtract
   
 ### 2 - What about the end around carry of One’s Complement makes it hard to use and implement?
 
-  The end around carry in One's Complement creates a few tricky (and avoidable) situations. First, it creates an odd looping condition where theres a chance that after adding two numbers together, the circuit brings around a second digit to do the whole thing over again (and potentially again and again and again...). It also creates two differnt carry instances, one for intermediary bit addition and one for the carry-around. Not ideal. Lastly, I imagine when creating a physical circuit, having to loop around the extra digit all the way back to the beginning would create headaches and unnessesary complexity within the circuit design.
+  The end around carry in One's Complement creates a few tricky (and avoidable) situations. First, it creates an odd looping condition where theres a chance that after adding two numbers together, the circuit brings around a second digit to do the whole thing over again (and potentially again and again and again...). It also creates two different carry instances, one for intermediary bit addition and one for the carry-around. Not ideal. Lastly, I imagine when creating a physical circuit, having to loop around the extra digit all the way back to the beginning would create headaches and unnessesary complexity within the circuit design.
 
 ### 3 - What is the edge case and problem with Two’s Complement number representation?
 
